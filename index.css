@@ -1,1 +1,21 @@
+/* styles for top */
+#top {
+}
 
+/* styles for middle */
+#middle {
+  background-image: url(./images/image\ 21.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* styles for reviews */
+#reviews {
+}
+
+/* styles for bottom */
+#bottom {
+  background-image: url(./images/Rectangle\ 40.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
