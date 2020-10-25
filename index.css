@@ -1,21 +1,31 @@
+body {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
 /* styles for top */
 #top {
+  background-image: url(./images/image\ 24.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /* styles for middle */
 #middle {
   background-image: url(./images/image\ 21.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 /* styles for reviews */
 #reviews {
+  background-color: #7c8fd4;
+  background-size: 100% 100%;
 }
 
 /* styles for bottom */
 #bottom {
   background-image: url(./images/Rectangle\ 40.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
