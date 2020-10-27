@@ -1,13 +1,85 @@
+@media only screen and (max-width: 700px) {
+  #top {
+    display: grid;
+    grid-template-areas:
+      "logo coname coname"
+      "logo coname coname"
+      "blank link links"
+      "header header header"
+      "button button button"
+      "name name name"
+      "address address address"
+      "phone phone phone"
+      "service service service";
+  }
+}
+
+@media only screen and (min-width: 700px) {
+}
+
 body {
   color: #ffffff;
   margin: 0;
+
   text-align: center;
 }
+
 /* styles for top */
 #top {
   background-image: url(./images/image\ 24.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  font-size: x-large;
+}
+#logo {
+  grid-area: logo;
+  margin: auto;
+}
+#coname {
+  grid-area: coname;
+}
+.link {
+  grid-area: link;
+  margin-left: 30%;
+}
+.links {
+  grid-area: links;
+  margin-left: 10%;
+}
+#header {
+  grid-area: header;
+  margin: 5% 15% 5% 15%;
+}
+#topbutton {
+  grid-area: button;
+}
+.topbutton {
+  margin: auto;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: xx-large;
+  padding: 2%;
+  filter: drop-shadow(-14px 11px 4px rgba(0, 0, 0, 0.25));
+}
+#name {
+  grid-area: name;
+  font-weight: bold;
+}
+#address {
+  grid-area: address;
+  margin: auto;
+}
+#phone {
+  grid-area: phone;
+}
+#topper {
+  grid-area: service;
+  background-color: #7c8fd4;
+}
+#counties {
+  word-spacing: 25px;
+  font-size: large;
+  margin: 0% 15% 5% 15%;
 }
 
 /* styles for middle */
@@ -28,4 +100,25 @@ body {
   background-image: url(./images/Rectangle\ 40.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  font-size: larger;
+}
+#bottombutton {
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: xx-large;
+  padding: 2%;
+  filter: drop-shadow(-14px 11px 5px rgba(0, 0, 0, 0.25));
+}
+
+#map {
+  margin: 2% 5% 5% 5%;
+  filter: drop-shadow(-14px 11px 4px rgba(0, 0, 0, 0.25));
+}
+#email {
+  margin: 2% 5% 5% 5%;
+  filter: drop-shadow(-14px 11px 4px rgba(0, 0, 0, 0.25));
+}
+#call {
+  margin: 2% 5% 5% 2%;
+  filter: drop-shadow(-14px 11px 4px rgba(0, 0, 0, 0.25));
 }
