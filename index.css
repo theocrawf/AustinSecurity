@@ -9,12 +9,57 @@
       "button button button"
       "name name name"
       "address address address"
-      "phone phone phone"
+      "info info info"
       "service service service";
+  }
+  #info {
+    display: none;
+  }
+  #company {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 700px) {
+  #top {
+    display: grid;
+    grid-template-areas:
+      "logo header header"
+      "coname . link"
+      "coname button links"
+      "inform inform info"
+      "service service service";
+  }
+
+  #topbutton {
+    background-color: #7c8fd4;
+    color: white;
+    margin: auto;
+  }
+  #coname {
+    font-size: 50px;
+  }
+
+  #name {
+    display: none;
+  }
+  #address {
+    display: none;
+  }
+  #topper {
+    background-color: #ffffff;
+  }
+  #companyName {
+    display: none;
+  }
+  #bottom {
+    display: grid;
+    grid-template-areas:
+      "para para ."
+      "button2 . logo2"
+      "company . logo2"
+      "contact icons icons";
+  }
 }
 
 body {
@@ -23,6 +68,9 @@ body {
 
   text-align: center;
 }
+/* .blue {
+  color: #7c8fd4;
+} */
 
 /* styles for top */
 #top {
@@ -45,6 +93,11 @@ body {
 .links {
   grid-area: links;
   margin-left: 10%;
+}
+#info {
+  grid-area: inform;
+  background-color: white;
+  color: black;
 }
 #header {
   grid-area: header;
@@ -69,8 +122,14 @@ body {
   grid-area: address;
   margin: auto;
 }
+
 #phone {
-  grid-area: phone;
+  grid-area: info;
+  text-decoration: none;
+  margin: auto;
+  font-size: larger;
+  color: black;
+  filter: drop-shadow(-14px 11px 4px rgba(0, 0, 0, 0.25));
 }
 #topper {
   grid-area: service;
@@ -86,28 +145,53 @@ body {
 #middle {
   background-image: url(./images/image\ 21.png);
   background-size: 100% 100%;
+  margin-top: -4%;
   background-repeat: no-repeat;
+  padding: 10px;
 }
 
 /* styles for reviews */
 #reviews {
   background-color: #7c8fd4;
   background-size: 100% 100%;
+  margin-top: -4%;
+  padding: 10px;
 }
 
 /* styles for bottom */
 #bottom {
+  margin-top: -3%;
   background-image: url(./images/Rectangle\ 40.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   font-size: larger;
 }
 #bottombutton {
+  margin-top: 10px;
   background-color: transparent;
   border-radius: 10px;
   font-size: xx-large;
   padding: 2%;
   filter: drop-shadow(-14px 11px 5px rgba(0, 0, 0, 0.25));
+}
+#button2 {
+  grid-area: button2;
+}
+#central {
+  grid-area: para;
+}
+#company {
+  grid-area: company;
+}
+#logo2 {
+  grid-area: logo2;
+}
+#icons {
+  grid-area: icons;
+  align-self: end;
+}
+#contact {
+  grid-area: contact;
 }
 
 #map {
