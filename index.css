@@ -15,9 +15,6 @@
   #info {
     display: none;
   }
-  #company {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -74,7 +71,7 @@ body {
 
 /* styles for top */
 #top {
-  background-image: url(./images/image\ 24.png);
+  background-image: url(./images/camera1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   font-size: x-large;
@@ -148,6 +145,12 @@ body {
   margin-top: -4%;
   background-repeat: no-repeat;
   padding: 10px;
+}
+
+/* styles for diamond certified */
+#diamond {
+  background-color: #ffffff;
+  color: black;
 }
 
 /* styles for reviews */
