@@ -1,0 +1,78 @@
+/* mobile view */
+@media only screen and (max-width: 700px) {
+}
+
+/* desktop view */
+@media only screen and (min-width: 700px) {
+}
+
+body {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #6c6c6c;
+}
+
+/* styles for top section */
+#top {
+  color: #bbbbbb;
+}
+h2 {
+  color: #7b7b7b;
+}
+
+#topbutton {
+  background-color: #7788cc;
+  border-radius: 10px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.blue {
+  color: #7c8fd4;
+}
+
+/* styles for offer section */
+#offers {
+  background-color: #7788cc;
+  color: #ffffff;
+}
+
+/* styles for diamond section */
+#diamond {
+  color: #7b7b7b;
+}
+#diamond h2 {
+  color: #7c8fd4;
+}
+#protect {
+  margin-bottom: 10px;
+}
+
+/* styles for reviews section */
+#reviews {
+  background-color: #7788cc;
+  color: #ffffff;
+}
+
+/* styles for bottom section */
+#bottom {
+  color: #6c6c6c;
+}
+#bottom h1 {
+  color: #7c8fd4;
+}
+
+#bottombutton {
+  background-color: #7788cc;
+  border-radius: 10px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
