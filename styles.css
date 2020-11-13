@@ -1,9 +1,27 @@
 /* mobile view */
 @media only screen and (max-width: 700px) {
+  #camera1 {
+    display: none;
+  }
 }
 
 /* desktop view */
 @media only screen and (min-width: 700px) {
+  #top {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "tophead toplogo"
+      "para toplogo"
+      "topbutton toplogo"
+      "service service";
+  }
+  #offers {
+    display: grid;
+    grid-template-areas:
+      "offerhead offerspan"
+      "offerpara offerspan";
+  }
 }
 
 body {
@@ -18,19 +36,36 @@ a {
 
 /* styles for top section */
 #top {
-  color: #bbbbbb;
+  color: #ffffff;
+  background-image: url(./images/Rectangle\ 137.png);
 }
 h2 {
-  color: #7b7b7b;
+  color: #ffffff;
 }
 
 #topbutton {
+  grid-area: topbutton;
   background-color: #7788cc;
   border-radius: 10px;
   font-size: 36px;
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
+}
+#toplogo {
+  grid-area: toplogo;
+}
+#header {
+  grid-area: header;
+}
+#tophead {
+  grid-area: tophead;
+}
+#toppara {
+  grid-area: para;
+}
+#service {
+  grid-area: service;
 }
 
 .blue {
@@ -41,6 +76,15 @@ h2 {
 #offers {
   background-color: #7788cc;
   color: #ffffff;
+}
+#offerhead {
+  grid-area: offerhead;
+}
+#offerspan {
+  grid-area: offerspan;
+}
+#offerpara {
+  grid-area: offerpara;
 }
 
 /* styles for diamond section */
@@ -58,6 +102,11 @@ h2 {
 #reviews {
   background-color: #7788cc;
   color: #ffffff;
+}
+/* need to figure out how to make this take up the whole section */
+#camera {
+  background-image: url(./images/camera1\ 1.png);
+  background-size: contain;
 }
 
 /* styles for bottom section */
