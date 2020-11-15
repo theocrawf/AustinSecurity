@@ -1,12 +1,109 @@
 /* mobile view */
 @media only screen and (max-width: 700px) {
+  /* top */
+  #toplogo {
+    display: none;
+  }
+  #top {
+    color: #6c6c6c;
+  }
+  .toplogo {
+    margin-top: 5%;
+  }
+  #header {
+    margin: 5% 5% 10% 5%;
+  }
+  #tophead {
+    margin-top: 10%;
+  }
+  #toppara {
+    margin: 5% 5% 10% 5%;
+  }
+  .blue {
+    color: #7788cc;
+  }
+  #service {
+    margin: 5%;
+    line-height: 200%;
+  }
+  /* offer */
+  #offerhead {
+    padding-top: 5%;
+    margin-top: 0%;
+  }
+  #offerpara {
+    margin: 5% 25% 5% 25%;
+  }
+  #offer1,
+  #offer2,
+  #offer3 {
+    margin: 5% 25% 5% 25%;
+  }
+
+  /* diamond */
   #camera1 {
     display: none;
+  }
+  .diamond {
+    margin: 10% 25% 5% 25%;
+  }
+  #text p {
+    margin: 5% 10% 5% 10%;
+  }
+  #protect {
+    margin-top: 15%;
+  }
+  /* reviews this will fix itself once i get the carousel working */
+  #review1 h3 {
+    padding-top: 5%;
+  }
+  #review1 p {
+    margin: 2% 10% 10% 10%;
+  }
+  #review2 p {
+    margin: 2% 10% 10% 10%;
+  }
+  #review3 p {
+    margin: 2% 10% 5% 10%;
+    padding-bottom: 5%;
+  }
+
+  /* bottom */
+  #info p {
+    margin: 5% 25% 5% 25%;
+    font-size: 18px;
+  }
+
+  #coname {
+    font-size: 48px;
+    margin: 10%;
+  }
+  #contact {
+    font-size: 36px;
+    margin: 10;
+  }
+
+  .austin {
+    display: none;
+  }
+  #bottomlogo {
+    margin: 5%;
+  }
+  #phone {
+    line-height: 200%;
+  }
+  #email {
+    line-height: 200%;
+  }
+
+  #links a {
+    margin: 5%;
   }
 }
 
 /* desktop view */
 @media only screen and (min-width: 700px) {
+  /* top section */
   #top {
     display: grid;
     grid-template-areas:
@@ -16,11 +113,143 @@
       "topbutton toplogo"
       "service service";
   }
+  #top {
+    color: #ffffff;
+    background-image: url(./images/Rectangle\ 137.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .toplogo {
+    display: none;
+  }
+  #topbutton {
+    margin: auto auto auto 5%;
+  }
+  #toplogo {
+    margin: auto 25% auto auto;
+  }
+  #toppara {
+    margin: auto 25% 5% 5%;
+    text-align: left;
+  }
+  #tophead {
+    margin: 5% auto 2% 5%;
+    text-align: left;
+  }
+  #header {
+    background-color: white;
+    color: #7c8fd4;
+    margin-top: auto;
+  }
+  /* offer section */
   #offers {
     display: grid;
     grid-template-areas:
       "offerhead offerspan"
       "offerpara offerspan";
+  }
+  #offerhead {
+    margin: 5% auto 5% 5%;
+  }
+  #offerpara {
+    margin: 0 auto 15% 5%;
+    text-align: left;
+    font-size: x-large;
+  }
+  #offerspan {
+    text-align: left;
+    font-size: x-large;
+  }
+  #offer1 {
+    margin: 5% 5% 5% 25%;
+  }
+  #offer2 {
+    margin: 5% 5% 5% 25%;
+  }
+  #offer3 {
+    margin: 5% 5% 5% 25%;
+  }
+  /* diamond section */
+  #diamond {
+    display: grid;
+    grid-template-areas:
+      "none title"
+      "picture text"
+      "picture text"
+      "foot foot";
+  }
+  .diamond {
+    text-align: right;
+    margin: 5% 5% auto auto;
+  }
+  #text {
+    text-align: justify;
+    margin: 5% 5% 5% 15%;
+  }
+  #camera1 {
+    margin: 25% auto 25% 5%;
+  }
+
+  /* review section */
+  #reviews {
+    display: grid;
+    grid-template-areas: "review1 review2 review3";
+  }
+  #review1 {
+    text-align: left;
+    margin: 5% 5% 5% 5%;
+  }
+
+  #review2 {
+    text-align: left;
+    margin: 5% 5% 5% 5%;
+  }
+
+  #review3 {
+    text-align: left;
+    margin: 5% 5% 5% 5%;
+  }
+
+  /* bottom section */
+  #bottom {
+    display: grid;
+    grid-template-areas:
+      "info blank"
+      "bottombutton blank"
+      "coname links"
+      "contact email"
+      "contact phone";
+  }
+  #bottomlogo {
+    display: none;
+  }
+  #links {
+    margin-right: 5%;
+  }
+  #links a {
+    margin: auto 0% 5% 5%;
+  }
+  #email {
+    margin: auto 5% auto auto;
+  }
+  #phone {
+    margin: auto 5% 5% auto;
+  }
+  #bottombutton {
+    margin: 5% auto auto 5%;
+  }
+  #contact {
+    text-align: left;
+    margin: 5% auto 5% 5%;
+  }
+  #info {
+    text-align: left;
+    margin: 5% 20% auto 5%;
+    font-size: 20px;
+  }
+  #coname {
+    text-align: left;
+    margin: 5% auto auto 5%;
   }
 }
 
@@ -36,11 +265,7 @@ a {
 
 /* styles for top section */
 #top {
-  color: #ffffff;
-  background-image: url(./images/Rectangle\ 137.png);
-}
-h2 {
-  color: #ffffff;
+  background-color: white;
 }
 
 #topbutton {
@@ -60,16 +285,17 @@ h2 {
 }
 #tophead {
   grid-area: tophead;
+  font-size: 36px;
 }
 #toppara {
   grid-area: para;
+  font-size: 24px;
 }
 #service {
   grid-area: service;
 }
-
-.blue {
-  color: #7c8fd4;
+#service p {
+  word-spacing: 30px;
 }
 
 /* styles for offer section */
@@ -91,11 +317,21 @@ h2 {
 #diamond {
   color: #7b7b7b;
 }
-#diamond h2 {
+.diamond {
   color: #7c8fd4;
+  grid-area: title;
 }
+#text {
+  grid-area: text;
+}
+
 #protect {
-  margin-bottom: 10px;
+  color: #7c8fd4;
+  grid-area: foot;
+  margin-bottom: 5px;
+}
+#camera1 {
+  grid-area: picture;
 }
 
 /* styles for reviews section */
@@ -103,6 +339,16 @@ h2 {
   background-color: #7788cc;
   color: #ffffff;
 }
+#review1 {
+  grid-area: review1;
+}
+#review2 {
+  grid-area: review2;
+}
+#review3 {
+  grid-area: review3;
+}
+
 /* need to figure out how to make this take up the whole section */
 #camera {
   background-image: url(./images/camera1\ 1.png);
@@ -111,17 +357,41 @@ h2 {
 
 /* styles for bottom section */
 #bottom {
-  color: #6c6c6c;
+  color: black;
 }
 #bottom h1 {
   color: #7c8fd4;
 }
 
 #bottombutton {
+  grid-area: bottombutton;
   background-color: #7788cc;
   border-radius: 10px;
   font-size: 36px;
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
+}
+
+#info {
+  grid-area: info;
+}
+#coname {
+  grid-area: coname;
+}
+#links {
+  grid-area: links;
+}
+#contact {
+  grid-area: contact;
+}
+#email {
+  grid-area: email;
+  text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25);
+  font-size: 36px;
+}
+#phone {
+  grid-area: phone;
+  text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25);
+  font-size: 36px;
 }
