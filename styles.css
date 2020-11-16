@@ -32,7 +32,7 @@
     margin-top: 0%;
   }
   #offerpara {
-    margin: 5% 25% 5% 25%;
+    margin: 5% 5% 15% 5%;
   }
   #offer1,
   #offer2,
@@ -59,7 +59,7 @@
   /* reviews this will fix itself once i get the carousel working */
   #review1 h3 {
     padding-top: 5%;
-  }
+    }
   #review1 p {
     margin: 2% 10% 10% 10%;
   }
@@ -265,6 +265,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   margin: 0;
+  font-family: 'Asap', sans-serif;
 }
 a {
   text-decoration: none;
@@ -287,6 +288,7 @@ a {
 }
 #toplogo {
   grid-area: toplogo;
+  padding: 0px 250px 0 0;
 }
 #header {
   grid-area: header;
@@ -304,6 +306,7 @@ a {
 }
 #service p {
   word-spacing: 30px;
+  font-size: large;
 }
 
 /* styles for offer section */
