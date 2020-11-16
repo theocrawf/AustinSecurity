@@ -97,10 +97,12 @@
   }
   #email {
     line-height: 200%;
+    margin: 0;
+    padding: 0;
   }
 
   #links a {
-    margin: 5%;
+    margin: 3%;
   }
 }
 
@@ -187,10 +189,10 @@
   }
   #text {
     text-align: justify;
-    margin: 5% 5% 5% 15%;
+    margin: 8% 5% 5% 15%;
   }
   #camera1 {
-    margin: 25% auto 25% 5%;
+    margin: 25% auto 35% 25%;
   }
 
   /* review section */
@@ -232,16 +234,17 @@
     display: none;
   }
   #links {
-    margin-right: 5%;
+    margin-right: 20px;
   }
   #links a {
-    margin: auto 0% 5% 5%;
+    margin: auto 0% 5% 0;
   }
+  
   #email {
     margin: auto 5% auto auto;
   }
   #phone {
-    margin: auto 5% 5% auto;
+    margin: auto 5% 20% auto;
   }
   #bottombutton {
     margin: 5% auto auto 5%;
@@ -359,6 +362,10 @@ a {
 #review3 {
   grid-area: review3;
 }
+.item{
+  margin: auto;
+  padding: 20px;
+}
 
 /* need to figure out how to make this take up the whole section */
 #camera {
@@ -372,6 +379,7 @@ a {
 }
 #bottom h1 {
   color: #7c8fd4;
+  font-size: 4rem;
 }
 
 #bottombutton {
@@ -393,8 +401,13 @@ a {
 #links {
   grid-area: links;
 }
+.links{
+  height: 6rem;
+  width: 6rem;
+}
 #contact {
   grid-area: contact;
+  font-size: 36px;
 }
 #email {
   grid-area: email;
