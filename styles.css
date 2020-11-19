@@ -57,9 +57,9 @@
     margin-top: 15%;
   }
   /* reviews this will fix itself once i get the carousel working */
-  #review1 h3 {
+  /* #review1 h3 {
     padding-top: 5%;
-    }
+  }*/
   #review1 p {
     margin: 2% 10% 10% 10%;
   }
@@ -131,14 +131,17 @@
     margin: auto auto auto 5%;
   }
   #toplogo {
-    margin: auto 25% auto auto;
+    margin: 35% 25% auto auto;
+  }
+  #license {
+    margin: auto 5% auto auto;
   }
   #toppara {
-    margin: auto 25% 5% 5%;
+    margin: auto 30% 5% 5%;
     text-align: left;
   }
   #tophead {
-    margin: 5% auto 2% 5%;
+    margin: 15% auto 2% 5%;
     text-align: left;
   }
   #header {
@@ -196,9 +199,12 @@
   }
 
   /* review section */
-  #reviews {
+  #carousel {
     display: grid;
     grid-template-areas: "review1 review2 review3";
+  }
+  .carousel {
+    display: none;
   }
   #review1 {
     text-align: left;
@@ -239,9 +245,9 @@
   #links a {
     margin: auto 0% 5% 0;
   }
-  
+
   #email {
-    margin: auto 5% auto auto;
+    margin: 5% 5% auto auto;
   }
   #phone {
     margin: auto 5% 20% auto;
@@ -268,7 +274,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   margin: 0;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
 }
 a {
   text-decoration: none;
@@ -291,7 +297,7 @@ a {
 }
 #toplogo {
   grid-area: toplogo;
-  padding: 0px 250px 0 0;
+  padding: 0 25% 0 0;
 }
 #header {
   grid-area: header;
@@ -308,8 +314,9 @@ a {
   grid-area: service;
 }
 #service p {
-  word-spacing: 30px;
-  font-size: large;
+  word-spacing: 40px;
+  font-size: 22px;
+  line-height: 50px;
 }
 
 /* styles for offer section */
@@ -338,6 +345,15 @@ a {
 #text {
   grid-area: text;
 }
+#hidden {
+  display: none;
+}
+#readmore {
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 15px;
+}
 
 #protect {
   color: #7c8fd4;
@@ -349,23 +365,26 @@ a {
 }
 
 /* styles for reviews section */
-#reviews {
+#carousel {
   background-color: #7788cc;
   color: #ffffff;
+  line-height: 25px;
 }
+
 #review1 {
   grid-area: review1;
 }
 #review2 {
   grid-area: review2;
 }
+
 #review3 {
   grid-area: review3;
 }
-.item{
+/* .item {
   margin: auto;
   padding: 20px;
-}
+} */
 
 /* need to figure out how to make this take up the whole section */
 #camera {
@@ -401,7 +420,7 @@ a {
 #links {
   grid-area: links;
 }
-.links{
+.links {
   height: 6rem;
   width: 6rem;
 }
@@ -419,7 +438,10 @@ a {
   text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25);
   font-size: 36px;
 }
-#footer{
+#footer {
   margin: auto;
   padding: 5px;
+}
+a {
+  cursor: pointer;
 }

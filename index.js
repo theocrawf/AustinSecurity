@@ -19,30 +19,11 @@
 // // Initial check
 // handleTabletChange(mediaQuery)
 
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-// showSlides((slideIndex += n));
-// }
-
-// function currentSlide(n) {
-// showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-// var i;
-// var slides = document.getElementsByClassName("item");
-// if (n > slides.length) {
-//   slideIndex = 1;
-// }
-// if (n < 1) {
-//   slideIndex = slides.length;
-// }
-// for (i = 0; i < slides.length; i++) {
-//   slides[i].style.display = "none";
-// }
-
-// slides[slideIndex - 1].style.display = "block";
-// }
+//function for expand button on diamond section
+function show() {
+    if (document.getElementById('hidden').style.display == 'none') {
+        document.getElementById('hidden').style.display = 'block';
+    } else {
+        document.getElementById('hidden').style.display = 'none';
+    }
+}
