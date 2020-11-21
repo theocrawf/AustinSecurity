@@ -183,8 +183,7 @@
   #diamond {
     display: grid;
     grid-template-areas:
-      "none title"
-      "picture text"
+      "picture title"
       "picture text"
       "foot foot";
   }
@@ -194,11 +193,11 @@
   }
   #text {
     text-align: justify;
-    margin: auto 5% auto 15%;
+    margin: 5% 5% 5% 15%;
   }
 
   #camera1 {
-    margin: 25% auto 35% 25%;
+    margin: 45% auto 25% 25%;
   }
 
   /* review section */
@@ -354,9 +353,14 @@ a {
 }
 #readmore {
   cursor: pointer;
-  border-radius: 10px;
   background: transparent;
   font-size: 15px;
+  background-color: #7788cc;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
 }
 
 #protect {
@@ -372,7 +376,7 @@ a {
 #carousel {
   background-color: #7788cc;
   color: #ffffff;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 #review1 {
@@ -385,10 +389,10 @@ a {
 #review3 {
   grid-area: review3;
 }
-/* .item {
-  margin: auto;
+.item {
   padding: 20px;
-} */
+  font-weight: 500;
+}
 
 /* need to figure out how to make this take up the whole section */
 #camera {
