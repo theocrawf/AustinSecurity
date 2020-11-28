@@ -393,9 +393,14 @@ a {
 #review3 {
   grid-area: review3;
 }
+
 .item {
   padding: 20px;
   font-weight: 500;
+}
+.review-name{
+  font-size: 20px;
+  font-style: italic;
 }
 
 /* need to figure out how to make this take up the whole section */
