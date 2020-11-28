@@ -131,6 +131,7 @@
   }
   #topbutton {
     margin: auto auto auto 5%;
+    font-weight: bold;
   }
   #toplogo {
     margin: 45% 105px auto auto;
@@ -151,6 +152,7 @@
     background-color: white;
     color: #7c8fd4;
     margin-top: auto;
+    font-weight: lighter;
   }
   /* offer section */
   #offers {
@@ -250,13 +252,14 @@
   }
 
   #email {
-    margin: 5% 5% auto auto;
+    margin: 5% 5% 5% auto;
   }
   #phone {
     margin: auto 5% 20% auto;
   }
   #bottombutton {
     margin: 5% auto auto 5%;
+    font-weight: bold;
   }
   #contact {
     text-align: left;
