@@ -6,7 +6,8 @@
   }
   #mobilelogo {
     background-image: url(./images/Rectangle\ 137.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 5%;
   }
 
@@ -100,7 +101,8 @@
   #email {
     line-height: 200%;
     margin: 0;
-    padding: 0;
+    padding: 5%;
+    font-size: 30px;
   }
 
   #links a {
@@ -253,6 +255,7 @@
 
   #email {
     margin: 5% 5% 5% auto;
+    font-size: 36px;
   }
   #phone {
     margin: auto 5% 20% auto;
@@ -448,7 +451,7 @@ a {
 #email {
   grid-area: email;
   text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25);
-  font-size: 36px;
+ 
 }
 #phone {
   grid-area: phone;
