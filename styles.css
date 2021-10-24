@@ -1,5 +1,5 @@
 /* mobile view */
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 360px) {
   /* top */
   #toplogo {
     display: none;
@@ -110,8 +110,8 @@
   }
 }
 
-/* desktop view */
-@media only screen and (min-width: 700px) {
+/* ---------------tablet view----------------- */
+@media only screen and (max-width: 1024px) {
   /* top section */
   #top {
     display: grid;
@@ -136,14 +136,14 @@
     font-weight: bold;
   }
   #toplogo {
-    margin: 45% 105px auto auto;
+    margin: 20% 150px auto auto;
     padding: 0 10% 0 0;
   }
   #license {
-    margin: auto 5% auto auto;
+    margin: 0 15% auto auto;
   }
   #toppara {
-    margin: auto 30% 5% 5%;
+    margin: 0 38% 5% 5%;
     text-align: left;
   }
   #tophead {
@@ -151,8 +151,6 @@
     text-align: left;
   }
   #header {
-    background-color: white;
-    color: #7c8fd4;
     margin-top: auto;
     font-weight: lighter;
   }
@@ -164,131 +162,130 @@
       "offerpara offerspan";
   }
   #offerhead {
-    margin: 5% auto 5% 5%;
+    margin: 5% auto 3% 5%;
+    font-size: 32px;
   }
   #offerpara {
-    margin: 0 auto 15% 5%;
+    margin: 0 200px 10% 5%;
     text-align: left;
-    font-size: x-large;
+    font-size: 20px;
+    padding-right: 70px;
   }
   #offerspan {
     text-align: left;
-    font-size: x-large;
+    font-size: 20px;
+    margin: auto auto auto 0;
   }
   #offer1 {
-    margin: 5% 5% 5% 25%;
+    margin: 5% 5% 5% -10%;
   }
   #offer2 {
-    margin: 5% 5% 5% 25%;
+    margin: 5% 5% 5% -10%;
   }
   #offer3 {
-    margin: 5% 5% 5% 25%;
+    margin: 5% 5% 5% -10%;
   }
   /* diamond section */
   #diamond {
     display: grid;
     grid-template-areas:
       "picture title"
-      "picture text"
-      "foot foot";
+      "picture text";
   }
   .diamond {
-    text-align: right;
-    margin: 100px 5% auto auto;
+    text-align: left;
+    margin: 90px 130px auto auto;
   }
   #text {
     text-align: justify;
-    margin: 10px 5% 5% 15%;
+    margin: -5% 5% 5% 15%;
   }
 
   #camera1 {
-    margin: 45% auto 25% 25%;
+    margin: 30% auto 25% 25%;
   }
 
   /* review section */
   #carousel {
     display: grid;
-    grid-template-areas: "review1 review2 review3";
+    grid-template-areas: 
+    "foot foot foot"
+    "review1 review2 review3";
   }
   .carousel {
     display: none;
   }
-  #review1 {
+  #review1, #review2, #review3 {
     text-align: left;
     margin: 5% 5% 5% 5%;
   }
 
-  #review2 {
-    text-align: left;
-    margin: 5% 5% 5% 5%;
-  }
-
-  #review3 {
-    text-align: left;
-    margin: 5% 5% 5% 5%;
   }
   #camera {
     background-image: url(./images/camera1\ 1.png);
-    height: 214px;
+    height: 100px;
     background-repeat: no-repeat;
+    margin: 0;
   }
 
   /* bottom section */
+  
   #bottom {
     display: grid;
     grid-template-areas:
-      "info blank"
-      "bottombutton blank"
+      "info bottomlogo"
+      "bottombutton bottomlogo"
       "coname links"
-      "contact email"
-      "contact phone";
+      "contact blank";
   }
-  #bottomlogo {
+  /* #bottomlogo {
     display: none;
-  }
+  } */
   #links {
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-top: 0px;
   }
   #links a {
-    margin: auto 0% 5% 0;
+    margin: auto 0% 0% 0%;
   }
+  #dsc{
+    margin: 0 0 0% 3%;
+    }
+    #ucc img{
+      margin: 0 0 0% 20%;
+    }
 
   #email {
-    margin: 5% 5% 5% auto;
-    font-size: 36px;
+    margin: 5% 0 5% auto;
+    font-size: 20px;
   }
   #phone {
-    margin: auto 5% 20% auto;
+    margin: auto 0 0 auto;
   }
   #bottombutton {
-    margin: 5% auto auto 5%;
+    margin: 5% auto 0% 5%;
     font-weight: bold;
   }
   #contact {
     text-align: left;
-    margin: 5% auto 5% 5%;
+    margin: -20% auto 5% 5%;
   }
   #info {
     text-align: left;
-    margin: auto 20% auto 5%;
+    margin: -20% 20% auto 5%;
     font-size: 20px;
   }
   #coname {
     text-align: left;
-    margin: 5% auto auto 5%;
+    margin: 5% auto 0 5%;
   }
-}
+  #bottomlogo{
+    margin: 5% 20% 5% 0%;
+    padding-right: 50px;
+    width: 200px;
+  }
 
-body {
-  background-color: #ffffff;
-  text-align: center;
-  margin: 0;
-  font-family: "Asap", sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #6c6c6c;
-}
+
 
 /* styles for top section */
 #top {
@@ -298,11 +295,12 @@ a {
 #topbutton {
   grid-area: topbutton;
   background-color: #7788cc;
-  border-radius: 10px;
-  font-size: 36px;
+  border-radius: 0px;
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff;
-  padding: 10px;
+  padding: 15px;
+  width: 80px;
 }
 #toplogo {
   grid-area: toplogo;
@@ -313,18 +311,18 @@ a {
 }
 #tophead {
   grid-area: tophead;
-  font-size: 36px;
+  font-size: 32px;
 }
 #toppara {
   grid-area: para;
-  font-size: 24px;
+  font-size: 20px;
 }
 #service {
   grid-area: service;
 }
 #service p {
   word-spacing: 40px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 50px;
 }
 
@@ -353,7 +351,7 @@ a {
 }
 #text {
   grid-area: text;
-  font-size: larger;
+  font-size: 20px;
 }
 #hidden {
   display: none;
@@ -361,17 +359,15 @@ a {
 #readmore {
   cursor: pointer;
   background: transparent;
-  font-size: 15px;
-  background-color: #7788cc;
-  border-radius: 10px;
   border: none;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 10px;
+  font-size: 15px;
+  color:  #7788cc;
+  padding: 10px 0;
+  margin: 0;
 }
 
 #protect {
-  color: #7c8fd4;
+  color: white;
   grid-area: foot;
   margin-bottom: 5px;
 }
@@ -399,11 +395,400 @@ a {
 
 .item {
   padding: 20px;
+}
+.item h2{
   font-weight: 500;
 }
-.review-name{
-  font-size: 20px;
+.review-name1, .review-name2, .review-name3{
   font-style: italic;
+}
+p.review-name1{
+  margin-top: 25%;
+}
+p.review-name2{
+  margin-top: 16.5%;
+}
+
+.review-name1 a, .review-name2 a, .review-name3 a{
+  color: white;
+}
+
+/* need to figure out how to make this take up the whole section */
+#camera {
+  background-image: url(./images/camera1\ 1.png);
+  background-size: contain;
+}
+
+/* styles for bottom section */
+#bottom {
+  color: black;
+  margin: 0;
+}
+#bottom h1 {
+  color: #7c8fd4;
+  font-size: 32px;
+}
+
+#bottombutton {
+  grid-area: bottombutton;
+  background-color: #7788cc;
+  border-radius: 0px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  width: 80px;
+}
+
+#info {
+  grid-area: info;
+  color: #8b8b8b;
+  font-size: 16px;
+}
+#info p{
+  margin-right: 50px;
+}
+#coname {
+  grid-area: coname;
+}
+#bottomlogo{
+  grid-area: bottomlogo;
+}
+#links {
+  grid-area: links;
+}
+/* .links {
+  height: 4rem;
+  width: 4rem;
+} */
+#contact {
+  grid-area: contact;
+  font-size: 20px;
+}
+#email {
+  grid-area: contact;
+  /* text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25); */
+  color: black;
+  font-size: 20px;
+ 
+}
+#phone {
+  grid-area: contact;
+  /* text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25); */
+  font-size: 20px;
+  color: black;
+}
+#phone p{
+  color: #8b8b8b;
+  font-size: 20px;
+}
+#allow{
+  font-size: 20px;
+}
+
+#footer {
+  margin: auto;
+  padding: 5px;
+  font-size: 14px;
+}
+
+
+/* ---------------desktop view----------------- */
+@media only screen and (min-width: 1025px) {
+  /* top section */
+  #top {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "tophead toplogo"
+      "para toplogo"
+      "topbutton license"
+      "service service";
+  }
+  #top {
+    color: #ffffff;
+    background-image: url(./images/Rectangle\ 137.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #mobilelogo {
+    display: none;
+  }
+  #topbutton {
+    margin: auto auto auto 5%;
+    font-weight: bold;
+  }
+  #toplogo {
+    margin: 20% 350px auto auto;
+    padding: 0 10% 0 0;
+  }
+  #license {
+    margin: 0 25% auto auto;
+  }
+  #toppara {
+    margin: 0 38% 5% 5%;
+    text-align: left;
+  }
+  #tophead {
+    margin: 15% auto 2% 5%;
+    text-align: left;
+  }
+  #header {
+    margin-top: auto;
+    font-weight: lighter;
+  }
+  /* offer section */
+  #offers {
+    display: grid;
+    grid-template-areas:
+      "offerhead offerspan"
+      "offerpara offerspan";
+  }
+  #offerhead {
+    margin: 5% auto 3% 5%;
+    font-size: 32px;
+  }
+  #offerpara {
+    margin: 0 200px 10% 5%;
+    text-align: left;
+    font-size: 20px;
+    padding-right: 70px;
+  }
+  #offerspan {
+    text-align: left;
+    font-size: 20px;
+    margin: auto auto auto 0;
+  }
+  #offer1 {
+    margin: 5% 5% 5% -10%;
+  }
+  #offer2 {
+    margin: 5% 5% 5% -10%;
+  }
+  #offer3 {
+    margin: 5% 5% 5% -10%;
+  }
+  /* diamond section */
+  #diamond {
+    display: grid;
+    grid-template-areas:
+      "picture title"
+      "picture text";
+  }
+  .diamond {
+    text-align: left;
+    margin: 110px 550px -15px auto;
+  }
+  #text {
+    text-align: justify;
+    margin: -10px 25% 5% 15%;
+  }
+
+  #camera1 {
+    margin: 30% auto 25% 25%;
+  }
+
+  /* review section */
+  #carousel {
+    display: grid;
+    grid-template-areas: 
+    "foot foot foot"
+    "review1 review2 review3";
+  }
+  .carousel {
+    display: none;
+  }
+  #review1, #review2, #review3 {
+    text-align: left;
+    margin: 5% 5% 5% 5%;
+  }
+
+  }
+  #camera {
+    background-image: url(./images/camera1\ 1.png);
+    height: 214px;
+    background-repeat: no-repeat;
+  }
+
+  /* bottom section */
+  
+  #bottom {
+    display: grid;
+    grid-template-areas:
+      "info bottomlogo"
+      "bottombutton bottomlogo"
+      "coname links"
+      "contact blank";
+  }
+  /* #bottomlogo {
+    display: none;
+  } */
+  #links {
+    margin-right: 35%;
+    margin-top: 50px;
+  }
+  #links a {
+    margin: auto 0% 0% 0%;
+  }
+  #dsc, #ucc{
+    margin: 0 0 5% 3%;
+    }
+  
+
+  #email {
+    margin: 5% 0 5% auto;
+    font-size: 20px;
+  }
+  #phone {
+    margin: auto 0 0 auto;
+  }
+  #bottombutton {
+    margin: 5% auto 5% 5%;
+    font-weight: bold;
+  }
+  #contact {
+    text-align: left;
+    margin: 0 auto 5% 5%;
+  }
+  #info {
+    text-align: left;
+    margin: 8% 20% auto 5%;
+    font-size: 20px;
+  }
+  #coname {
+    text-align: left;
+    margin: 5% auto auto 5%;
+  }
+  #bottomlogo{
+    margin: 12% 0% 5% 6%;
+  }
+
+
+
+/* styles for top section */
+#top {
+  background-color: white;
+}
+
+#topbutton {
+  grid-area: topbutton;
+  background-color: #7788cc;
+  border-radius: 0px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  width: 155px;
+}
+#toplogo {
+  grid-area: toplogo;
+  /* padding: 0 10% 0 0; */
+}
+#header {
+  grid-area: header;
+}
+#tophead {
+  grid-area: tophead;
+  font-size: 32px;
+}
+#toppara {
+  grid-area: para;
+  font-size: 20px;
+}
+#service {
+  grid-area: service;
+}
+#service p {
+  word-spacing: 40px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+/* styles for offer section */
+#offers {
+  background-color: #7788cc;
+  color: #ffffff;
+}
+#offerhead {
+  grid-area: offerhead;
+}
+#offerspan {
+  grid-area: offerspan;
+}
+#offerpara {
+  grid-area: offerpara;
+}
+
+/* styles for diamond section */
+#diamond {
+  color: #7b7b7b;
+}
+.diamond {
+  color: #7c8fd4;
+  grid-area: title;
+}
+#text {
+  grid-area: text;
+  font-size: 20px;
+}
+#hidden {
+  display: none;
+}
+#readmore {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color:  #7788cc;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#protect {
+  color: white;
+  grid-area: foot;
+  margin-bottom: 5px;
+}
+#camera1 {
+  grid-area: picture;
+}
+
+/* styles for reviews section */
+#carousel {
+  background-color: #7788cc;
+  color: #ffffff;
+  line-height: 20px;
+}
+
+#review1 {
+  grid-area: review1;
+}
+#review2 {
+  grid-area: review2;
+}
+
+#review3 {
+  grid-area: review3;
+}
+
+.item {
+  padding: 20px;
+}
+.item h2{
+  font-weight: 500;
+}
+.review-name1, .review-name2, .review-name3{
+  font-style: italic;
+}
+p.review-name1{
+  margin-top: 13%;
+}
+p.review-name2{
+  margin-top: 16.5%;
+}
+
+.review-name1 a, .review-name2 a, .review-name3 a{
+  color: white;
 }
 
 /* need to figure out how to make this take up the whole section */
@@ -418,50 +803,92 @@ a {
 }
 #bottom h1 {
   color: #7c8fd4;
-  font-size: 4rem;
+  font-size: 32px;
 }
 
 #bottombutton {
   grid-area: bottombutton;
   background-color: #7788cc;
-  border-radius: 10px;
-  font-size: 36px;
+  border-radius: 0px;
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff;
-  padding: 10px;
+  padding: 15px;
+  width: 155px;
 }
 
 #info {
   grid-area: info;
+  color: #8b8b8b;
+  font-size: 16px;
+}
+#info p{
+  margin-right: 50px;
 }
 #coname {
   grid-area: coname;
 }
+#bottomlogo{
+  grid-area: bottomlogo;
+}
 #links {
   grid-area: links;
 }
-.links {
-  height: 6rem;
-  width: 6rem;
-}
+/* .links {
+  height: 4rem;
+  width: 4rem;
+} */
 #contact {
   grid-area: contact;
-  font-size: 36px;
+  font-size: 20px;
 }
 #email {
-  grid-area: email;
-  text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25);
+  grid-area: contact;
+  /* text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25); */
+  color: black;
+  font-size: 20px;
  
 }
 #phone {
-  grid-area: phone;
-  text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25);
-  font-size: 36px;
+  grid-area: contact;
+  /* text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25); */
+  font-size: 20px;
+  color: black;
 }
+#phone p{
+  color: #8b8b8b;
+  font-size: 20px;
+}
+#allow{
+  font-size: 20px;
+}
+
 #footer {
   margin: auto;
   padding: 5px;
+  font-size: 14px;
 }
+
+
+
+/*---------------Outside of Media Queries-------------*/
+#header {
+  background-color: #7c8fd4;
+  color: white;
+}
+
 a {
+  text-decoration: none;
   cursor: pointer;
 }
+
+body {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  font-family: "Asap", sans-serif;
+}
+#toadstool{
+  color: #7b7b7b;
+}
+
