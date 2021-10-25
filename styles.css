@@ -1,5 +1,9 @@
+/* *{
+  border: red 1px solid;
+} */
+
 /* mobile view */
-@media only screen and (min-width: 360px) {
+@media only screen and (max-width: 799px) {
   /* top */
   #toplogo {
     display: none;
@@ -10,108 +14,182 @@
     background-repeat: no-repeat;
     padding-top: 5%;
   }
+  #mobilelogo img{
+    width: 220px;
+  }
 
-  #header {
-    margin: 5% 5% 10% 5%;
+  #header{
+    color: #8b8b8b;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 10% 5% 15% 10%;
+    /* padding: 10% 10%; */
+    text-align: left;
   }
+
   #tophead {
-    margin-top: 10%;
+    margin-top: 15%;
+    margin-left: 10%;
+    text-align: left;
   }
+
   #toppara {
-    margin: 5% 5% 10% 5%;
+    margin: 10% 10% 10% 10%;
+    color: #8b8b8b;
+    text-align: left;
   }
-  .blue {
+  #toppara p{
+    font-size: 16px;
+  }
+
+  #topbutton{
+    width: 100%;
+  }
+  .topbutton{
+    width: 100%;
+  }
+  .blue{
     color: #7788cc;
+    font-size: 24px;
   }
   #service {
-    margin: 5%;
-    line-height: 200%;
+    /* margin: 5%; */
+    /* line-height: 100%; */
+  }
+  #service p{
+    color: #8b8b8b;
+    margin: 10% 5% 10% 10%;
+    display: none;
   }
   /* offer */
   #offerhead {
     padding-top: 5%;
-    margin-top: 0%;
+
+    text-align: left;
+    margin: 10% 5% 10% 10%;
   }
   #offerpara {
-    margin: 5% 5% 7% 5%;
-    font-size: 22px;
+    margin: 10% 5% 10% 10%;
+    font-size: 20px;
+    text-align: left;
   }
   #offer1,
   #offer2,
   #offer3 {
-    margin: 5% 25% 5% 25%;
-    font-size: 18px;
+    margin: 5% 10% 0% 10%;
+    font-size: 16px;
+    text-align: left;
   }
   #offer3 {
-    padding-bottom: 5%;
+    padding-bottom: 15%;
   }
 
   /* diamond */
   #camera1 {
-    width: 250px;
-  }
-  .diamond {
-    margin: 10% 25% 5% 25%;
-  }
-  #text p {
-    margin: 5% 10% 5% 10%;
-  }
-  #protect {
-    margin-top: 15%;
-  }
-  /* reviews this will fix itself once i get the carousel working */
-  #review1 h2 {
+    width: 200px;
     padding-top: 5%;
   }
+  
+  .diamond {
+    margin: 10% 10% 10% 10%;
+    text-align: left;
+  }
+  #text p {
+    margin: 10% 10% 5% 10%;
+    text-align: left;
+    font-size: 16px;
+  }
+  .readmore{
+    text-align: left;
+    margin-left: 10%;
+  }
+  #protect {
+    margin-top: 5%;
+    padding-top: 10%;
+
+  }
+  /* reviews this will fix itself once i get the carousel working */
+  #carousel{
+    text-align: left;
+  }
+  #carousel h1{
+    margin-left: 10%;
+  }
+  #carousel h2{
+    margin-left: 5%;
+  } 
+  .item{
+    margin-bottom: -40px;
+    padding: 0;
+  }
   #review1 p {
-    margin: 2% 10% 10% 10%;
+    margin: 0% 10% 5% 5%;
+    text-align: left;
   }
   #review2 p {
-    margin: 2% 10% 10% 10%;
+    margin: 0% 10% 5% 5%;
+    text-align: left;
   }
   #review3 p {
-    margin: 2% 10% 5% 10%;
+    margin: 0% 10% 5% 5%;
     padding-bottom: 5%;
+    text-align: left;
   }
-
+#camera{
+  max-height: 60px;
+  width: 100%;
+}
   /* bottom */
-  #info p {
-    margin: 5% 25% 5% 25%;
-    font-size: 18px;
+  .bottom {
+    display: grid;
+    grid-template-areas:
+      "info bottomlogo"
+      "bottombutton bottombutton"
+      "coname links"
+      "contact blank";
+  }
+  #info{
+    margin: 5% 0% 5% 5%;
+    font-size: 16px;
+  }
+  #allow p{
+    font-size: 20px;
   }
 
   #coname {
-    font-size: 48px;
+    font-size: 32px;
     margin: 10%;
   }
   #contact {
-    font-size: 36px;
-    margin: 10;
+    font-size: 20px;
+    margin: 10%;
   }
 
   .austin {
     display: none;
   }
   #bottomlogo {
-    margin: 5%;
+   max-width: 100px;
+   /* margin-right: 30px; */
   }
   #phone {
-    line-height: 200%;
+    /* line-height: 200%; */
   }
   #email {
-    line-height: 200%;
     margin: 0;
-    padding: 5%;
-    font-size: 30px;
+    font-size: 16px;
   }
-
+  #links{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
   #links a {
     margin: 3%;
   }
 }
 
 /* ---------------tablet view----------------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 800px) {
   /* top section */
   #top {
     display: grid;
@@ -134,6 +212,7 @@
   #topbutton {
     margin: auto auto auto 5%;
     font-weight: bold;
+    width: 155px;
   }
   #toplogo {
     margin: 20% 150px auto auto;
@@ -153,7 +232,14 @@
   #header {
     margin-top: auto;
     font-weight: lighter;
+    background-color: #7c8fd4;
+    color: white;
   }
+
+  .mobile-service{
+    display: none;
+  }
+
   /* offer section */
   #offers {
     display: grid;
@@ -224,13 +310,14 @@
   #camera {
     background-image: url(./images/camera1\ 1.png);
     height: 100px;
+    width: 100%;
     background-repeat: no-repeat;
     margin: 0;
   }
 
   /* bottom section */
   
-  #bottom {
+  .bottom {
     display: grid;
     grid-template-areas:
       "info bottomlogo"
@@ -242,7 +329,7 @@
     display: none;
   } */
   #links {
-    margin-left: 25px;
+    margin-left: 0px;
     margin-top: 0px;
   }
   #links a {
@@ -252,7 +339,7 @@
     margin: 0 0 0% 3%;
     }
     #ucc img{
-      margin: 0 0 0% 20%;
+      margin: 0 0 0% 10%;
     }
 
   #email {
@@ -280,9 +367,11 @@
     margin: 5% auto 0 5%;
   }
   #bottomlogo{
-    margin: 5% 20% 5% 0%;
-    padding-right: 50px;
-    width: 200px;
+    margin: 5% 65% 5% 0%;
+    width: 120px;
+  }
+  .bottomlogo img{
+    margin-right: 50%;
   }
 
 
@@ -343,7 +432,7 @@
 
 /* styles for diamond section */
 #diamond {
-  color: #7b7b7b;
+  color: #8b8b8b;
 }
 .diamond {
   color: #7c8fd4;
@@ -360,7 +449,7 @@
   cursor: pointer;
   background: transparent;
   border: none;
-  font-size: 15px;
+  font-size: 16px;
   color:  #7788cc;
   padding: 10px 0;
   margin: 0;
@@ -420,11 +509,11 @@ p.review-name2{
 }
 
 /* styles for bottom section */
-#bottom {
+/* #bottom {
   color: black;
   margin: 0;
-}
-#bottom h1 {
+} */
+.bottom h1 {
   color: #7c8fd4;
   font-size: 32px;
 }
@@ -510,39 +599,68 @@ p.review-name2{
     background-image: url(./images/Rectangle\ 137.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: white;
   }
   #mobilelogo {
     display: none;
   }
   #topbutton {
-    margin: auto auto auto 5%;
+    margin: 5% auto 5% 5%;
     font-weight: bold;
+    background-color: #7788cc;
+    border-radius: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    width: 155px;
+  }
+  .topbutton{
+    text-align: left;
   }
   #toplogo {
     margin: 20% 350px auto auto;
     padding: 0 10% 0 0;
+    width: 250px;
   }
   #license {
-    margin: 0 25% auto auto;
+    margin: 0 0 auto 25%;
   }
   #toppara {
     margin: 0 38% 5% 5%;
     text-align: left;
+    font-size: 20px;
   }
   #tophead {
     margin: 15% auto 2% 5%;
     text-align: left;
+    font-size: 32px;
   }
   #header {
     margin-top: auto;
     font-weight: lighter;
+    background-color: #7c8fd4;
+    color: white;
   }
+
+  .mobile-service{
+    display: none;
+  }
+  /*service section*/
+  #service p {
+    word-spacing: 40px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  
   /* offer section */
   #offers {
     display: grid;
     grid-template-areas:
       "offerhead offerspan"
       "offerpara offerspan";
+        background-color: #7788cc;
+        color: #ffffff;      
   }
   #offerhead {
     margin: 5% auto 3% 5%;
@@ -574,18 +692,31 @@ p.review-name2{
     grid-template-areas:
       "picture title"
       "picture text";
+      color: #8b8b8b;
   }
   .diamond {
     text-align: left;
     margin: 110px 550px -15px auto;
+    color: #7c8fd4;
   }
   #text {
     text-align: justify;
     margin: -10px 25% 5% 15%;
+    font-size: 20px;
   }
 
   #camera1 {
     margin: 30% auto 25% 25%;
+  }
+
+  #readmore {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color:  #7788cc;
+    padding: 10px 0;
+    margin: 0;
   }
 
   /* review section */
@@ -595,188 +726,42 @@ p.review-name2{
     "foot foot foot"
     "review1 review2 review3";
   }
+  #carousel {
+    background-color: #7788cc;
+    color: #ffffff;
+    line-height: 20px;
+  }
   .carousel {
     display: none;
   }
+
+  #protect {
+    color: white;
+    margin-bottom: 5px;
+  }
+
   #review1, #review2, #review3 {
     text-align: left;
     margin: 5% 5% 5% 5%;
   }
-
+  .item {
+    padding: 20px;
   }
+  .item h2{
+    font-weight: 500;
+  }
+  
   #camera {
     background-image: url(./images/camera1\ 1.png);
     height: 214px;
     background-repeat: no-repeat;
-  }
+  } 
 
-  /* bottom section */
-  
-  #bottom {
-    display: grid;
-    grid-template-areas:
-      "info bottomlogo"
-      "bottombutton bottomlogo"
-      "coname links"
-      "contact blank";
-  }
-  /* #bottomlogo {
-    display: none;
-  } */
-  #links {
-    margin-right: 35%;
-    margin-top: 50px;
-  }
-  #links a {
-    margin: auto 0% 0% 0%;
-  }
-  #dsc, #ucc{
-    margin: 0 0 5% 3%;
-    }
-  
-
-  #email {
-    margin: 5% 0 5% auto;
-    font-size: 20px;
-  }
-  #phone {
-    margin: auto 0 0 auto;
-  }
-  #bottombutton {
-    margin: 5% auto 5% 5%;
-    font-weight: bold;
-  }
-  #contact {
-    text-align: left;
-    margin: 0 auto 5% 5%;
-  }
-  #info {
-    text-align: left;
-    margin: 8% 20% auto 5%;
-    font-size: 20px;
-  }
-  #coname {
-    text-align: left;
-    margin: 5% auto auto 5%;
-  }
-  #bottomlogo{
-    margin: 12% 0% 5% 6%;
-  }
-
-
-
-/* styles for top section */
-#top {
-  background-color: white;
-}
-
-#topbutton {
-  grid-area: topbutton;
-  background-color: #7788cc;
-  border-radius: 0px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 15px;
-  width: 155px;
-}
-#toplogo {
-  grid-area: toplogo;
-  /* padding: 0 10% 0 0; */
-}
-#header {
-  grid-area: header;
-}
-#tophead {
-  grid-area: tophead;
-  font-size: 32px;
-}
-#toppara {
-  grid-area: para;
-  font-size: 20px;
-}
-#service {
-  grid-area: service;
-}
-#service p {
-  word-spacing: 40px;
-  font-size: 20px;
-  line-height: 50px;
-}
-
-/* styles for offer section */
-#offers {
-  background-color: #7788cc;
-  color: #ffffff;
-}
-#offerhead {
-  grid-area: offerhead;
-}
-#offerspan {
-  grid-area: offerspan;
-}
-#offerpara {
-  grid-area: offerpara;
-}
-
-/* styles for diamond section */
-#diamond {
-  color: #7b7b7b;
-}
-.diamond {
-  color: #7c8fd4;
-  grid-area: title;
-}
-#text {
-  grid-area: text;
-  font-size: 20px;
-}
 #hidden {
   display: none;
 }
-#readmore {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  font-size: 15px;
-  color:  #7788cc;
-  padding: 10px 0;
-  margin: 0;
-}
-
-#protect {
-  color: white;
-  grid-area: foot;
-  margin-bottom: 5px;
-}
-#camera1 {
-  grid-area: picture;
-}
 
 /* styles for reviews section */
-#carousel {
-  background-color: #7788cc;
-  color: #ffffff;
-  line-height: 20px;
-}
-
-#review1 {
-  grid-area: review1;
-}
-#review2 {
-  grid-area: review2;
-}
-
-#review3 {
-  grid-area: review3;
-}
-
-.item {
-  padding: 20px;
-}
-.item h2{
-  font-weight: 500;
-}
 .review-name1, .review-name2, .review-name3{
   font-style: italic;
 }
@@ -798,16 +783,24 @@ p.review-name2{
 }
 
 /* styles for bottom section */
-#bottom {
-  color: black;
+.bottom {
+  /* display: grid; */
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "info bottomlogo"
+    "bottombutton bottomlogo"
+    "coname links"
+    "contact blank";
 }
-#bottom h1 {
+
+.bottom h1 {
   color: #7c8fd4;
   font-size: 32px;
 }
 
 #bottombutton {
-  grid-area: bottombutton;
+  margin: 0% auto 5% 5%;
+  font-weight: bold;
   background-color: #7788cc;
   border-radius: 0px;
   font-size: 20px;
@@ -816,50 +809,75 @@ p.review-name2{
   padding: 15px;
   width: 155px;
 }
-
+#bottombutton a{
+  margin: 0;
+  margin-bottom: 0px;
+}
+#contact {
+  text-align: left;
+  margin: 0 auto 5% 5%;
+  font-size: 20px;
+}
 #info {
-  grid-area: info;
+  text-align: left;
+  margin: 10% 20% 10% 5%;
   color: #8b8b8b;
   font-size: 16px;
 }
 #info p{
   margin-right: 50px;
+  margin-bottom: 20px;
 }
+#allow{
+  font-size: 32px;
+  padding-bottom: 3%;
+}
+
 #coname {
-  grid-area: coname;
+  text-align: left;
+  margin: 10% auto auto 5%;
+  color: #7c8fd4;
 }
 #bottomlogo{
-  grid-area: bottomlogo;
+  margin: 22% 0% 5% 25%;
+  width: 250px;
+  margin-top: 15%;
+  justify-content: center;
 }
+
+.bottom-mobile{
+  display: none;
+}
+
 #links {
-  grid-area: links;
+  margin-right: 20%;
+  margin-top: 80px;
 }
-/* .links {
-  height: 4rem;
-  width: 4rem;
-} */
-#contact {
-  grid-area: contact;
-  font-size: 20px;
+#links a {
+  margin: auto 0% 2% 2%;
 }
+#links p{
+  color: black;
+  font-size: 26px;
+}
+#dsc, #ucc{
+  margin: 0 0 3% 3%;
+  width: 55px;
+  }
+
 #email {
-  grid-area: contact;
-  /* text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25); */
+  margin: 5% 0 5% auto;
+  font-size: 20px;
   color: black;
   font-size: 20px;
- 
 }
 #phone {
-  grid-area: contact;
-  /* text-shadow: -14px 10px 10px rgba(0, 0, 0, 0.25); */
+  margin: auto 0 0 auto;
   font-size: 20px;
-  color: black;
+  color: black;    
 }
 #phone p{
   color: #8b8b8b;
-  font-size: 20px;
-}
-#allow{
   font-size: 20px;
 }
 
@@ -872,11 +890,6 @@ p.review-name2{
 
 
 /*---------------Outside of Media Queries-------------*/
-#header {
-  background-color: #7c8fd4;
-  color: white;
-}
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -889,6 +902,91 @@ body {
   font-family: "Asap", sans-serif;
 }
 #toadstool{
-  color: #7b7b7b;
+  color: #8b8b8b;
 }
 
+/*----------grid areas---------------*/
+#topbutton {
+  grid-area: topbutton; 
+}
+#license{
+  grid-area: license;
+}
+#tophead {
+  grid-area: tophead; 
+}
+#toppara {
+  grid-area: para; 
+}
+
+#service {
+  grid-area: service;
+}
+#toplogo {
+  grid-area: toplogo;
+}
+#header {
+  grid-area: header;
+}
+
+#offerhead {
+  grid-area: offerhead;
+}
+#offerspan {
+  grid-area: offerspan;
+}
+#offerpara {
+  grid-area: offerpara;
+}
+
+.diamond {  
+  grid-area: title;
+}
+#text {
+  grid-area: text;
+}
+
+#review1 {
+  grid-area: review1;
+}
+#review2 {
+  grid-area: review2;
+}
+
+#review3 {
+  grid-area: review3;
+}
+
+#protect {
+  grid-area: foot;
+}
+#camera1 {
+  grid-area: picture;
+}
+
+#info {
+  grid-area: info; 
+}
+#bottombutton {
+  grid-area: bottombutton; 
+}
+#coname {
+  grid-area: coname;
+}
+#bottomlogo{
+  grid-area: bottomlogo; 
+}
+#links {
+  grid-area: links;
+}
+
+#contact {
+  grid-area: contact;
+}
+#email {
+  grid-area: contact; 
+}
+
+#phone {
+  grid-area: contact;  
+}
