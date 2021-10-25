@@ -605,7 +605,7 @@ p.review-name2{
     display: none;
   }
   #topbutton {
-    margin: 5% auto 5% 5%;
+    margin: auto 0 5% 5%;
     font-weight: bold;
     background-color: #7788cc;
     border-radius: 0px;
@@ -615,9 +615,7 @@ p.review-name2{
     padding: 15px;
     width: 155px;
   }
-  .topbutton{
-    text-align: left;
-  }
+  
   #toplogo {
     margin: 20% 350px auto auto;
     padding: 0 10% 0 0;
@@ -809,10 +807,7 @@ p.review-name2{
   padding: 15px;
   width: 155px;
 }
-#bottombutton a{
-  margin: 0;
-  margin-bottom: 0px;
-}
+
 #contact {
   text-align: left;
   margin: 0 auto 5% 5%;
@@ -857,8 +852,9 @@ p.review-name2{
   margin: auto 0% 2% 2%;
 }
 #links p{
-  color: black;
-  font-size: 26px;
+  /* color: black; */
+  font-size: 16px;
+  margin-right: 18%;
 }
 #dsc, #ucc{
   margin: 0 0 3% 3%;
