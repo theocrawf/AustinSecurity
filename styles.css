@@ -60,8 +60,7 @@
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
-    padding: 15px;
-    width: 255px;
+    padding: 15px 35px;
   }
   .blue{
     color: #7788cc;
@@ -212,7 +211,7 @@
   }
   #contact {
     font-size: 20px;
-    margin: 15% 35% 10% 0 ;
+    margin: 15% 35% 8% 0 ;
   }
   #contact p{
     padding-top: 5%;
@@ -224,16 +223,15 @@
   }
 
   #bottombutton {
-    margin: 5% 45% 10% 0%;
+    margin: 5% 35% 10% 0%;
     font-weight: bold;
     background-color: #7788cc;
     border-radius: 0px;
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
-    padding: 15px;
-    width: 155px;
-    text-align: left;
+    padding: 15px 35px;
+    
   }
 
   #bottomlogo {
