@@ -211,11 +211,10 @@
   }
   #contact {
     font-size: 20px;
-    margin: 15% 35% 8% 0 ;
+    margin: 15% 0% 8% 0 ;
   }
   #contact p{
     padding-top: 5%;
-    padding-right: 15%;
   }
 
   .austin {
@@ -223,7 +222,7 @@
   }
 
   #bottombutton {
-    margin: 5% 35% 10% 0%;
+    margin: 5% 0% 10% 0%;
     font-weight: bold;
     background-color: #7788cc;
     border-radius: 0px;
