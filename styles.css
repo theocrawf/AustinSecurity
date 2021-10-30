@@ -337,7 +337,7 @@
   }
   /*service section*/
   #service p {
-    word-spacing: 40px;
+    word-spacing: 10px;
     font-size: 20px;
     line-height: 50px;
   }
@@ -638,7 +638,7 @@ p.review-name2{
   }
   /*service section*/
   #service p {
-    word-spacing: 40px;
+    word-spacing: 10px;
     font-size: 20px;
     line-height: 50px;
   }
